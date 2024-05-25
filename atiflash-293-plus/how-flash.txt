@@ -1,0 +1,23 @@
+ID gpu
+
+amdvbflash.exe -i 
+pause
+
+-
+save bios gpu o
+
+amdvbflash.exe -s 0 bios0.rom
+pause
+-
+
+flash bios gpu 0
+
+amdvbflash.exe -f -p 0 bios0.rom
+pause
+-
+flash bios gpu 1
+
+amdvbflash.exe -f -p 1 bios0.rom
+pause
+
+        

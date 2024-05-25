@@ -1,0 +1,16 @@
+进入管理员权限的命令行，执行以下命令，Enter Admin Terminal
+
+列出所有显卡接口，List all GPU adapters
+amdvbflash.exe -i
+
+没反应的话，可尝试安装, Try this if no adapter found
+insttool64.exe
+
+选择待刷卡号，比如0，Select the id number of the gpu to be flashed
+amdvbflash.exe -unlockrom 0
+
+刷入 flash in
+amdvbflash.exe -f -p 0 abc.rom
+
+重锁rom, lock rom
+amdvbflash.exe -lockrom 0
